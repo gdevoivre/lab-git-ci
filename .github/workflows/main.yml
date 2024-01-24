@@ -32,4 +32,11 @@ jobs:
       with:
         files: target/**/*.xml
 
+    # 2.4
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: my-app-1.0
+        path: target/*
+
 
